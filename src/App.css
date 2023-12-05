@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card {
+  position: relative;
+  padding: 48px;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.11),
+    0px 1.2px 4.2px 0px rgba(0, 0, 0, 0.08),
+    0px 0.5px 1.8px 0px rgba(0, 0, 0, 0.06),
+    0px 0.2px 0.6px 0px rgba(0, 0, 0, 0.04);
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin: auto;
+  margin-top: 20px;
+  height: 500px;
+}
+.conversation {
+  overflow: auto;
+  max-height: 400px;
+}
+.inputCont {
+  width:95%; /* Make div A take the full width of div B */
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+ padding: 10px;
+ display: flex;
+ flex-direction: column;
+  border-radius: 5px;
+}
+.input{
+  padding: 10px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  border: 1px solid grey;
+  margin: 10px;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-content: right;
+  align-self: right;
+  text-align: right;
+  padding: 5px;
+  border: 0.2px solid grey;
+  border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase opacity for better visibility */
+
+  
+}
+
+.bot{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-content: left;
+  align-self: left;
+  padding: 5px;
+  border: 0.2px solid grey;
+  border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase opacity for better visibility */
+
+    text-align: left;
+}

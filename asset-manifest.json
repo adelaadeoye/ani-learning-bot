@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ani-learning-bot.git/static/css/main.32ebe760.css",
-    "main.js": "/ani-learning-bot.git/static/js/main.e2e14247.js",
-    "static/js/787.d0a4f9dd.chunk.js": "/ani-learning-bot.git/static/js/787.d0a4f9dd.chunk.js",
-    "static/media/axios.cjs": "/ani-learning-bot.git/static/media/axios.f73c6a014bbc8a882637.cjs",
-    "index.html": "/ani-learning-bot.git/index.html",
-    "main.32ebe760.css.map": "/ani-learning-bot.git/static/css/main.32ebe760.css.map",
-    "main.e2e14247.js.map": "/ani-learning-bot.git/static/js/main.e2e14247.js.map",
-    "787.d0a4f9dd.chunk.js.map": "/ani-learning-bot.git/static/js/787.d0a4f9dd.chunk.js.map"
+    "main.css": "/ani-learning-bot/static/css/main.32ebe760.css",
+    "main.js": "/ani-learning-bot/static/js/main.f4f6eeaf.js",
+    "static/js/787.d0a4f9dd.chunk.js": "/ani-learning-bot/static/js/787.d0a4f9dd.chunk.js",
+    "static/media/axios.cjs": "/ani-learning-bot/static/media/axios.f73c6a014bbc8a882637.cjs",
+    "index.html": "/ani-learning-bot/index.html",
+    "main.32ebe760.css.map": "/ani-learning-bot/static/css/main.32ebe760.css.map",
+    "main.f4f6eeaf.js.map": "/ani-learning-bot/static/js/main.f4f6eeaf.js.map",
+    "787.d0a4f9dd.chunk.js.map": "/ani-learning-bot/static/js/787.d0a4f9dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32ebe760.css",
-    "static/js/main.e2e14247.js"
+    "static/js/main.f4f6eeaf.js"
   ]
 }

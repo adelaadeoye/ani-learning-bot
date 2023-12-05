@@ -1,13 +1,17 @@
 {
   "name": "ani-learning-bot",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://adelaadeoye.github.io/ani-learning-bot",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.3.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "hercai": "^11.0.1",
     "patch-package": "^8.0.0",
     "react": "^18.2.0",
@@ -22,8 +26,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "patch-package"
-
+    "postinstall": "patch-package",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }

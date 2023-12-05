@@ -3,24 +3,29 @@ import "./App.css";
 import Container from "react-bootstrap/Container";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import { BeatLoader } from "react-spinners";
-const { Hercai } = require('hercai');
-
+import axios from "axios";
 function App() {
   const [userInput, setUserInput] = useState("");
   const [allInputs, setAllInputs] = useState([]);
   let [loading, setLoading] = useState(false);
-  const herc = new Hercai();
 
   useEffect(() => {
     if (loading) {
-
-     
-      herc.question({model:"v3-beta",content:{userInput}}).then(response => {
-      console.log(response.reply);
-      
-      });
+      axios
+        .post("http://localhost:3001/ask-question", {
+          model: "v3-beta",
+          content: userInput,
+        })
+        .then((response) => {
+          console.log(response.data);
+          setLoading(false);
+          setUserInput("");
+        })
+        .catch((error) => {
+          console.error("Error:", error.message);
+        });
     }
-  }, [loading]);
+  }, [loading, userInput]);
 
   const handleSend = () => {
     setLoading(true);
@@ -30,7 +35,6 @@ function App() {
       message: userInput,
     });
     setAllInputs(newAllInputs);
-    setUserInput("");
     console.log("userInput", allInputs);
   };
   return (
